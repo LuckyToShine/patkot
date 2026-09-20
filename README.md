@@ -1,4 +1,4 @@
-# 👋🧩 Morphe Patches template
+# 👋🧩 Lucky Patches
 
 Template repository for Morphe Patches.
 
