@@ -1,7 +1,7 @@
 {
-  "created_at": "",
-  "description": "",
-  "download_url": "",
+  "created_at": "2026-09-20T07:55:08",
+  "description": "## 1.0.0-dev.1 (2026-09-20)\n\n### ✨ New Features\n\n* add initial Iris Gallery patches ([ddb90a9](https://github.com/LuckyToShine/patkot/commit/ddb90a98060da05a64d8b04a480e4e2941d3be93))",
+  "download_url": "https://github.com/LuckyToShine/patkot/releases/download/v1.0.0-dev.1/patches-1.0.0-dev.1.mpp",
   "signature_download_url": "",
-  "version": ""
+  "version": "1.0.0-dev.1"
 }
