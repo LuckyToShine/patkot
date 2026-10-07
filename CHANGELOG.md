@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/LuckyToShine/patkot/compare/v1.1.1...v1.2.0) (2026-10-07)
+
+### ✨ New Features
+
+* add Move to Secure Folder patch for Iris Gallery 0.8.0 ([12d37b9](https://github.com/LuckyToShine/patkot/commit/12d37b915942f4a999164677f4b5bec66b5c2aec))
+
 ## [1.1.1](https://github.com/LuckyToShine/patkot/compare/v1.1.0...v1.1.1) (2026-10-05)
 
 ### 🐛 Bug Fixes

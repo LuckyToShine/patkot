@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "patches": [
     {
       "name": "Disable ads",
@@ -19,6 +19,33 @@
           "targets": [
             {
               "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Move to Secure Folder",
+      "description": "Adds Samsung Secure Folder as a destination when moving items to Locked. Only active on devices where Secure Folder is available.",
+      "default": true,
+      "category": null,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.iris.gallery",
+          "name": "Iris Gallery",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#6750A4",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "0.8.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
