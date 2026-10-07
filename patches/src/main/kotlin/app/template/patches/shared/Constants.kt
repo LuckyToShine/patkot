@@ -16,4 +16,17 @@ object Constants {
             )
         )
     )
+
+    val COMPATIBILITY_IRIS_GALLERY = Compatibility(
+        name = "Iris Gallery",
+        packageName = "com.iris.gallery",
+        apkFileType = ApkFileType.APK,
+        appIconColor = 0x6750A4,
+        targets = listOf(
+            // The app is obfuscated, so the fingerprints and the extension only match this build.
+            AppTarget(
+                version = "0.8.0"
+            )
+        )
+    )
 }
