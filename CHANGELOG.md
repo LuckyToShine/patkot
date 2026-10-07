@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/LuckyToShine/patkot/compare/v1.2.1...v1.3.0) (2026-10-07)
+
+### ✨ New Features
+
+* add configurable Custom loading video patch for Cinevi ([caacda2](https://github.com/LuckyToShine/patkot/commit/caacda21f38a461aca0bfda447d9549df10c5486))
+
 ## [1.2.1](https://github.com/LuckyToShine/patkot/compare/v1.2.0...v1.2.1) (2026-10-07)
 
 ### 🐛 Bug Fixes

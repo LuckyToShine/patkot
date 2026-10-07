@@ -1,7 +1,104 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "patches": [
+    {
+      "name": "Custom loading video",
+      "description": "Replaces the loading screen shown when a video starts with your own video. WebM (VP9 or AV1) or MP4 (H.265/HEVC).",
+      "default": false,
+      "category": null,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.movievn.cinevi",
+          "name": "Cinevi",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E50914",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "videoPath",
+          "title": "Video file",
+          "description": "The video to show. WebM with VP9 or AV1, or MP4 with H.265/HEVC. It is stored inside the app, so keep it short and small.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "scale",
+          "title": "Scaling",
+          "description": "How the video is sized inside the loading screen.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "fit",
+          "values": {
+            "Fit (show everything, may add bars)": "fit",
+            "Fill (crop to cover the screen)": "fill",
+            "Stretch (ignore the aspect ratio)": "stretch"
+          }
+        },
+        {
+          "key": "loop",
+          "title": "Loop",
+          "description": "Repeat the video until the real video starts.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "mute",
+          "title": "Mute",
+          "description": "Play the loading video without sound.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideOriginal",
+          "title": "Hide the original loading screen",
+          "description": "Turn off to keep Cinevi's logo and text on top of your video.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "background",
+          "title": "Background color",
+          "description": "Color behind the video when it does not cover the screen, as #RRGGBB. Leave empty to keep the original background.",
+          "required": false,
+          "type": "kotlin.String",
+          "default": "#000000",
+          "values": null
+        },
+        {
+          "key": "strictFormat",
+          "title": "Only accept WebM (VP9/AV1) and MP4 (H.265)",
+          "description": "Turn off to embed any video file. Other formats may not play on every phone.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
     {
       "name": "Disable ads",
       "description": "Removes ads (splash, banners, popups, interstitials and native ads).",
