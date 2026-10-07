@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/LuckyToShine/patkot/compare/v1.2.0...v1.2.1) (2026-10-07)
+
+### 🐛 Bug Fixes
+
+* release 1.2.1 (no code changes since 1.2.0) ([0ad7b7f](https://github.com/LuckyToShine/patkot/commit/0ad7b7f7762d1cc7c5c48c582d41a4638ea71d38))
+
 ## [1.2.0](https://github.com/LuckyToShine/patkot/compare/v1.1.1...v1.2.0) (2026-10-07)
 
 ### ✨ New Features
