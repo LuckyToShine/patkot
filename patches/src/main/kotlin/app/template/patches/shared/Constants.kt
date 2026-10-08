@@ -41,4 +41,17 @@ object Constants {
             )
         )
     )
+
+    val COMPATIBILITY_SIMPLE_TIME_TRACKER = Compatibility(
+        name = "Simple Time Tracker",
+        packageName = "com.razeeman.util.simpletimetracker",
+        apkFileType = ApkFileType.APK,
+        appIconColor = 0x2196F3,
+        targets = listOf(
+            // Class and method names are not obfuscated, but the code was only checked in this build.
+            AppTarget(
+                version = "1.60"
+            )
+        )
+    )
 }
