@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/LuckyToShine/patkot/compare/v1.3.0...v1.4.0) (2026-10-08)
+
+### ✨ New Features
+
+* add AMOLED theme patch for Sticker.ly 3.37.0 ([02bb384](https://github.com/LuckyToShine/patkot/commit/02bb38439db609fdaea3e0838d9c6c889fbc8980))
+
 ## [1.3.0](https://github.com/LuckyToShine/patkot/compare/v1.2.1...v1.3.0) (2026-10-07)
 
 ### ✨ New Features
