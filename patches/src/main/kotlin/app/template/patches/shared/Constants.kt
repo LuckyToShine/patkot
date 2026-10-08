@@ -17,6 +17,18 @@ object Constants {
         )
     )
 
+    val COMPATIBILITY_STICKERLY = Compatibility(
+        name = "Sticker.ly",
+        packageName = "com.snowcorp.stickerly.android",
+        apkFileType = ApkFileType.APKM,
+        appIconColor = 0x2E5FFF,
+        targets = listOf(
+            AppTarget(
+                version = "3.37.0"
+            )
+        )
+    )
+
     val COMPATIBILITY_IRIS_GALLERY = Compatibility(
         name = "Iris Gallery",
         packageName = "com.iris.gallery",
