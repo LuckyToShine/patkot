@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "patches": [
     {
       "name": "AMOLED theme",
@@ -42,6 +42,33 @@
           }
         }
       ]
+    },
+    {
+      "name": "Custom icons",
+      "description": "Adds your own vector icons (.xml files) to the icon picker. Put the files in Android/data/com.razeeman.util.simpletimetracker/files/custom_icons, then open the icon picker. They are at the end of the list and show in your activity color.",
+      "default": true,
+      "category": null,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.razeeman.util.simpletimetracker",
+          "name": "Simple Time Tracker",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#2196F3",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.60",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
     },
     {
       "name": "Custom loading video",

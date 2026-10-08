@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/LuckyToShine/patkot/compare/v1.4.0...v1.5.0) (2026-10-08)
+
+### ✨ New Features
+
+* add Custom icons patch for Simple Time Tracker 1.60 ([70fc118](https://github.com/LuckyToShine/patkot/commit/70fc1189fb3ef01e0951ff087b5a2ab61c222517))
+
 ## [1.4.0](https://github.com/LuckyToShine/patkot/compare/v1.3.0...v1.4.0) (2026-10-08)
 
 ### ✨ New Features

@@ -15,7 +15,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.4.0](https://github.com/LuckyToShine/patkot/releases/tag/v1.4.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.5.0](https://github.com/LuckyToShine/patkot/releases/tag/v1.5.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
 <details open>
 <summary>📦 Sticker.ly&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -28,6 +28,21 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [AMOLED theme](#amoled-theme) | Replaces the light theme with a dark AMOLED theme. Backgrounds become black and dark text becomes light. Pictures (PNG, WebP) and colors set in code are not changed. | • Background color |
+
+</details>
+
+<details open>
+<summary>📦 Simple Time Tracker&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.60 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Custom icons](#custom-icons) | Adds your own vector icons (.xml files) to the icon picker. Put the files in Android/data/com.razeeman.util.simpletimetracker/files/custom_icons, then open the icon picker. They are at the end of the list and show in your activity color. |  |
 
 </details>
 
