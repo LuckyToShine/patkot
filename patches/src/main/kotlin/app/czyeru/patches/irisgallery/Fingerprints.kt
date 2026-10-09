@@ -1,4 +1,4 @@
-package app.template.patches.irisgallery
+package app.czyeru.patches.irisgallery
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.methodCall

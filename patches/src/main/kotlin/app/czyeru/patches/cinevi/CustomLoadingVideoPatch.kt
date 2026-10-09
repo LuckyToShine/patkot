@@ -1,4 +1,4 @@
-package app.template.patches.cinevi
+package app.czyeru.patches.cinevi
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.PatchException
@@ -7,10 +7,10 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.filePathOption
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patcher.patch.stringOption
-import app.template.patches.shared.Constants.COMPATIBILITY_CINEVI
+import app.czyeru.patches.shared.Constants.COMPATIBILITY_CINEVI
 import java.io.File
 
-private const val EXTENSION_CLASS = "Lapp/template/extension/cinevi/CustomLoadingVideo;"
+private const val EXTENSION_CLASS = "Lapp/czyeru/extension/cinevi/CustomLoadingVideo;"
 private const val BASE_VIEW = "Lchuangyuan/ycj/videolibrary/widget/BaseView;"
 private const val ACTION_CONTROL_VIEW = "Lchuangyuan/ycj/videolibrary/widget/ActionControlView;"
 

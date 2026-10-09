@@ -1,9 +1,9 @@
-package app.template.patches.stickerly
+package app.czyeru.patches.stickerly
 
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patcher.patch.stringOption
-import app.template.patches.shared.Constants.COMPATIBILITY_STICKERLY
+import app.czyeru.patches.shared.Constants.COMPATIBILITY_STICKERLY
 import java.io.File
 import java.util.logging.Logger
 import javax.xml.parsers.DocumentBuilderFactory

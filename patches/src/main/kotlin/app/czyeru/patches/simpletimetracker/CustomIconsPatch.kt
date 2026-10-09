@@ -1,4 +1,4 @@
-package app.template.patches.simpletimetracker
+package app.czyeru.patches.simpletimetracker
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
@@ -6,12 +6,12 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.smali.ExternalLabel
-import app.template.patches.shared.Constants.COMPATIBILITY_SIMPLE_TIME_TRACKER
+import app.czyeru.patches.shared.Constants.COMPATIBILITY_SIMPLE_TIME_TRACKER
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
-private const val EXTENSION_CLASS = "Lapp/template/extension/simpletimetracker/CustomIcons;"
+private const val EXTENSION_CLASS = "Lapp/czyeru/extension/simpletimetracker/CustomIcons;"
 private const val ICON_IMAGE_REPO = "Lcom/example/util/simpletimetracker/core/repo/IconImageRepo;"
 private const val ICON_VIEW = "Lcom/example/util/simpletimetracker/feature_views/IconView;"
 private const val ICON_VIEW_BINDING =

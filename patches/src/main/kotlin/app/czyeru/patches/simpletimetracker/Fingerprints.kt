@@ -1,4 +1,4 @@
-package app.template.patches.simpletimetracker
+package app.czyeru.patches.simpletimetracker
 
 import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags

@@ -1,4 +1,4 @@
-package app.template.patches.stickerly
+package app.czyeru.patches.stickerly
 
 import java.io.File
 import javax.xml.parsers.DocumentBuilderFactory

@@ -1,4 +1,4 @@
-package app.template.patches.cinevi
+package app.czyeru.patches.cinevi
 
 import app.morphe.patcher.Fingerprint
 

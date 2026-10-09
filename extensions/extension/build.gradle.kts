@@ -3,7 +3,7 @@ extension {
 }
 
 android {
-    namespace = "app.template.extension"
+    namespace = "app.czyeru.extension"
 }
 
 dependencies {

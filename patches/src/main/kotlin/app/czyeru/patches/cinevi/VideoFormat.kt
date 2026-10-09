@@ -1,4 +1,4 @@
-package app.template.patches.cinevi
+package app.czyeru.patches.cinevi
 
 import java.io.File
 import java.io.RandomAccessFile

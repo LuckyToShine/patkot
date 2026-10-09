@@ -19,3 +19,12 @@ provided that such references:
 - Are accurate, factual, and non-misleading;
 - Do not suggest authorship by the Morphe project; and
 - Appear only in a secondary or descriptive context, not as part of the product or project name.
+
+Third-party code
+================
+
+The TikTok patches and their extensions (`app.czyeru.patches.tiktok`, `app.czyeru.extension.tiktok`,
+`app.czyeru.extension.shared`) are derived from icysymmetra/tiktok-patches-for-morphe
+(https://github.com/icysymmetra/tiktok-patches-for-morphe), which itself builds on the ReVanced and
+Morphe patch sources. The original copyright headers are kept in the individual files. The code is
+distributed under the GNU General Public License v3 (see LICENSE).

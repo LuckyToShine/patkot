@@ -1,12 +1,12 @@
-package app.template.patches.irisgallery
+package app.czyeru.patches.irisgallery
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.smali.ExternalLabel
-import app.template.patches.shared.Constants.COMPATIBILITY_IRIS_GALLERY
+import app.czyeru.patches.shared.Constants.COMPATIBILITY_IRIS_GALLERY
 
-private const val EXTENSION_CLASS = "Lapp/template/extension/securefolder/SecureFolderPatch;"
+private const val EXTENSION_CLASS = "Lapp/czyeru/extension/securefolder/SecureFolderPatch;"
 
 @Suppress("unused")
 val secureFolderPatch = bytecodePatch(

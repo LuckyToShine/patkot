@@ -1,4 +1,4 @@
-package app.template.patches.stickerly
+package app.czyeru.patches.stickerly
 
 import app.morphe.patcher.patch.PatchException
 import java.io.File
