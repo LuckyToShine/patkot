@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/LuckyToShine/patkot/compare/v1.5.0...v1.6.0) (2026-10-09)
+
+### ✨ New Features
+
+* **tiktok:** add TikTok patches for 47.2.41 ([89276d2](https://github.com/LuckyToShine/patkot/commit/89276d2fbcb4f8390505d960fc4108b6a0b4a0c5))
+
 ## [1.5.0](https://github.com/LuckyToShine/patkot/compare/v1.4.0...v1.5.0) (2026-10-08)
 
 ### ✨ New Features

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-08T03:18:56",
-  "description": "## [1.5.0](https://github.com/LuckyToShine/patkot/compare/v1.4.0...v1.5.0) (2026-10-08)\n\n### ✨ New Features\n\n* add Custom icons patch for Simple Time Tracker 1.60 ([70fc118](https://github.com/LuckyToShine/patkot/commit/70fc1189fb3ef01e0951ff087b5a2ab61c222517))",
-  "download_url": "https://github.com/LuckyToShine/patkot/releases/download/v1.5.0/patches-1.5.0.mpp",
+  "created_at": "2026-10-09T03:53:28",
+  "description": "## [1.6.0](https://github.com/LuckyToShine/patkot/compare/v1.5.0...v1.6.0) (2026-10-09)\n\n### ✨ New Features\n\n* **tiktok:** add TikTok patches for 47.2.41 ([89276d2](https://github.com/LuckyToShine/patkot/commit/89276d2fbcb4f8390505d960fc4108b6a0b4a0c5))",
+  "download_url": "https://github.com/LuckyToShine/patkot/releases/download/v1.6.0/patches-1.6.0.mpp",
   "signature_download_url": "",
-  "version": "1.5.0"
+  "version": "1.6.0"
 }
