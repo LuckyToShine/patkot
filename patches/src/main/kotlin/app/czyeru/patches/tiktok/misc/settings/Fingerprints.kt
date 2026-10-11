@@ -52,14 +52,18 @@ internal object NpthExtentTaskInitFingerprint : Fingerprint(
     },
 )
 
+/**
+ * The compose function that builds the whole settings list: it reads the group view models,
+ * sorts their rows and hands the result to the lazy column. It is the only method of the
+ * fragment with 11 parameters that takes the support group view model (`ER` in TikTok 46.2.3,
+ * `oX` in 47.2.41).
+ */
 internal object SettingsComposeRowsFingerprint : Fingerprint(
     custom = { method, classDef ->
         classDef.endsWith("/SettingsComposeRvmpFragment;") &&
             method.returnType == "V" &&
-            (
-                (method.name == "XN" && method.parameterTypes.size == 8) ||
-                    (method.name == "ER" && method.parameterTypes.size == 11)
-            )
+            method.parameterTypes.size == 11 &&
+            method.parameterTypes.any { it.endsWith("/group/support/SupportGroupVM;") }
     },
 )
 

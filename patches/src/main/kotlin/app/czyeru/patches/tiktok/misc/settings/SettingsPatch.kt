@@ -16,6 +16,7 @@ import app.morphe.patcher.util.smali.ExternalLabel
 import app.czyeru.patches.tiktok.misc.extension.sharedExtensionPatch
 import app.czyeru.util.findMutableMethodOf
 import app.czyeru.util.findFreeRegister
+import app.czyeru.util.getFreeRegisterProvider
 import app.czyeru.util.getReference
 import app.czyeru.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.ClassDef
@@ -263,29 +264,41 @@ val settingsPatch = bytecodePatch(
                     field.takeIf { it.name == "SECTION_HEADER" }
                 } ?: return false
 
+            // The rows are sorted right before they reach the lazy column. The sort helper is
+            // obfuscated and renamed between versions, so it is found by its shape:
+            // static (Comparator, Iterable) -> List, followed by move-result-object.
             val sortedListIndex = composeRowsMethod.implementation?.instructions?.indexOfLast {
                 if (it.opcode != Opcode.INVOKE_STATIC) return@indexOfLast false
                 val reference = (it as? ReferenceInstruction)?.reference as? MethodReference
                     ?: return@indexOfLast false
-                reference.name in setOf("LJLJLLL", "LJLLLL") &&
-                    reference.parameterTypes == listOf("Ljava/util/Comparator;", "Ljava/lang/Iterable;") &&
+                reference.parameterTypes == listOf("Ljava/util/Comparator;", "Ljava/lang/Iterable;") &&
                     reference.returnType == "Ljava/util/List;"
             } ?: -1
             if (sortedListIndex < 0) return false
 
-            val listRegister = (composeRowsMethod.getInstruction(sortedListIndex + 1) as? OneRegisterInstruction)
-                ?.registerA ?: return false
+            val moveResult = composeRowsMethod.getInstruction(sortedListIndex + 1)
+            if (moveResult.opcode != Opcode.MOVE_RESULT_OBJECT) return false
+            val listRegister = (moveResult as OneRegisterInstruction).registerA
+            // invoke-direct below can only address v0-v15.
+            if (listRegister > 15) return false
+
+            // The sorted list is the one that gets remembered right after this point, so the
+            // row added here is part of what the lazy column shows.
+            val insertIndex = sortedListIndex + 2
+            val registers = composeRowsMethod.getFreeRegisterProvider(insertIndex, 3, listRegister)
+            val copyRegister = registers.getFreeRegister4Bit()
+            val rowRegister = registers.getFreeRegister4Bit()
+            val indexRegister = registers.getFreeRegister4Bit()
 
             composeRowsMethod.addInstructions(
-                sortedListIndex + 2,
+                insertIndex,
                 """
-                    new-instance v0, Ljava/util/ArrayList;
-                    move-object v1, v$listRegister
-                    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-                    sget-object v1, ${openDebugField.definingClass}->OPEN_DEBUG:${openDebugField.type}
-                    const/4 v2, 0x0
-                    invoke-virtual {v0, v2, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
-                    move-object v$listRegister, v0
+                    new-instance v$copyRegister, Ljava/util/ArrayList;
+                    invoke-direct {v$copyRegister, v$listRegister}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+                    sget-object v$rowRegister, ${openDebugField.definingClass}->OPEN_DEBUG:${openDebugField.type}
+                    const/4 v$indexRegister, 0x0
+                    invoke-virtual {v$copyRegister, v$indexRegister, v$rowRegister}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
+                    move-object v$listRegister, v$copyRegister
                 """,
             )
 
