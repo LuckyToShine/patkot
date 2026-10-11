@@ -1,3 +1,9 @@
+## [1.6.1](https://github.com/LuckyToShine/patkot/compare/v1.6.0...v1.6.1) (2026-10-11)
+
+### 🐛 Bug Fixes
+
+* **tiktok:** show Settings entry on 47.2.41 ([8305168](https://github.com/LuckyToShine/patkot/commit/8305168731012752392cf432e2822a1d0fdcdd26))
+
 ## [1.6.0](https://github.com/LuckyToShine/patkot/compare/v1.5.0...v1.6.0) (2026-10-09)
 
 ### ✨ New Features
